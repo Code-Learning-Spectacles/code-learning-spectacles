@@ -5,6 +5,9 @@ on:
     workflows: ["Deploy Terraform"]
     types:
       - completed
+  push:
+    paths:
+      - 'DB/migrations/**'
 jobs:
   migrate:
     if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
