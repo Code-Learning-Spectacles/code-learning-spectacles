@@ -1,4 +1,4 @@
 CREATE TABLE Profile (
     profileId SERIAL PRIMARY KEY,
-    name VARCHAR(100) NOT NULL
+    name VARCHAR(100) NOT NULL UNIQUE
 );

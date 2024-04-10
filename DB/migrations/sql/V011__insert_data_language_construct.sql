@@ -103,10 +103,10 @@ VALUES
          print("Item:", item)'),
     ((SELECT codingLanguageId FROM CodingLanguage WHERE name = 'Python' LIMIT 1),
      (SELECT codeConstructId FROM CodeConstruct WHERE name = 'If statement' LIMIT 1),
-     'if condition:\n
-         \tprint("Condition is true")
-     else:\n
-         \tprint("Condition is false")'),
+     'if condition:
+         print("Condition is true")
+     else:
+         print("Condition is false")'),
     ((SELECT codingLanguageId FROM CodingLanguage WHERE name = 'Python' LIMIT 1),
      (SELECT codeConstructId FROM CodeConstruct WHERE name = 'Switch statement' LIMIT 1),
      '# Python does not have a direct switch statement.'),
