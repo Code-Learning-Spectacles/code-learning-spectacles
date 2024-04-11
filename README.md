@@ -32,12 +32,6 @@ To enable Terraform to apply changes, an Arn role is required. This role grants 
 
 After creating the Arn role, copy the Arn number and create a GitHub secret, assigning the value to the `AWS_ROLE` secret.
 
-### AWS Region
-Specify the AWS region where the resources will reside. For example, `eu-west-1` is used:
-
-```plaintext
-AWS_REGION=eu-west-1
-
 ### Terraform
 After setting up the AWS role and setting the secrets you can run the deploy workflow. After a successfull and the RDS output will be saved in the secret or can be viewed on AWS.
 
